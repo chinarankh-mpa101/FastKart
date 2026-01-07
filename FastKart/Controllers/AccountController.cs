@@ -60,6 +60,41 @@ namespace FastKart.Controllers
             
         }
 
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
 
-    }
+        [HttpPost]
+        public async Task <IActionResult> Login(LoginVM vm)
+        {
+            if(!ModelState.IsValid) 
+                return View(vm);
+
+            var user = await _userManager.FindByEmailAsync(vm.Email);
+            if (user is null)
+            {
+                ModelState.AddModelError("", "Email or password is incorrect");
+                return View(vm);
+            }
+            var loginResult = await _userManager.CheckPasswordAsync(user, vm.Password);
+            if (!loginResult)
+            {
+                ModelState.AddModelError("", "Email or password is incorrect");
+                return View(vm);
+            }
+            await _signInManager.SignInAsync(user, vm.IsRemember);
+            return Ok($"welcome {user.Fullname}");
+
+        }
+
+		public async Task<IActionResult> LogOut()
+		{
+			await _signInManager.SignOutAsync();
+			return RedirectToAction(nameof(Login));
+
+		}
+
+	}
 }

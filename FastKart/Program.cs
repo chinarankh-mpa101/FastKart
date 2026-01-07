@@ -16,7 +16,7 @@ namespace FastKart
 
             builder.Services.AddDbContext<AppDbContext>(option =>
             {
-                option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+                option.UseSqlServer(builder.Configuration.GetConnectionString("Default2"));
 
             });
 

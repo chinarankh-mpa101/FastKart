@@ -9,5 +9,7 @@ namespace FastKart.ViewModels.UserViewModels
 
         [Required, MinLength(4), DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public bool IsRemember { get; set; }
     }
 }
