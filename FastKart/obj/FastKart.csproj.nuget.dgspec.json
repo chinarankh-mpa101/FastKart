@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Desktop\\FastKart\\FastKart\\FastKart.csproj": {}
+    "C:\\Users\\student\\Desktop\\MVC-Fastkart\\FastKart\\FastKart\\FastKart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Desktop\\FastKart\\FastKart\\FastKart.csproj": {
+    "C:\\Users\\student\\Desktop\\MVC-Fastkart\\FastKart\\FastKart\\FastKart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\FastKart\\FastKart\\FastKart.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Desktop\\MVC-Fastkart\\FastKart\\FastKart\\FastKart.csproj",
         "projectName": "FastKart",
-        "projectPath": "C:\\Users\\student\\Desktop\\FastKart\\FastKart\\FastKart.csproj",
+        "projectPath": "C:\\Users\\student\\Desktop\\MVC-Fastkart\\FastKart\\FastKart\\FastKart.csproj",
         "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\FastKart\\FastKart\\obj\\",
+        "outputPath": "C:\\Users\\student\\Desktop\\MVC-Fastkart\\FastKart\\FastKart\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

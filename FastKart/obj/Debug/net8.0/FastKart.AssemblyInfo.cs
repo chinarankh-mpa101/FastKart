@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FastKart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fce1eae515a325962f3ae801b5b9917a70249fe0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b36325c0a4dba82c4160a568245e3fbca9b98f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FastKart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FastKart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

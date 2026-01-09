@@ -10,5 +10,9 @@ namespace FastKart.Contexts
         {
             
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet <BasketItem> BasketItems { get; set; }
+
     }
 }

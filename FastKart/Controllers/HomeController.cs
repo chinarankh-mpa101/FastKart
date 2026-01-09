@@ -1,15 +1,19 @@
 using FastKart.Abstraction;
+using FastKart.Contexts;
 using FastKart.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace FastKart.Controllers
 {
-    public class HomeController(IEmailService _emailService) : Controller
+    public class HomeController(IEmailService _emailService,AppDbContext _context) : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var products = await _context.Products.ToListAsync();
+            return View(products);
         }
 
         public async Task<IActionResult> Test()

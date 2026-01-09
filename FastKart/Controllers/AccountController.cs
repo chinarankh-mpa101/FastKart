@@ -94,7 +94,7 @@ namespace FastKart.Controllers
             }
 
             await _signInManager.SignInAsync(user, vm.IsRemember);
-            return Ok($"welcome {user.Fullname}");
+            return View("Index", "Home");
 
         }
 
@@ -107,7 +107,6 @@ namespace FastKart.Controllers
         private async Task SendConfirmationMailAsync(AppUser user)
         {
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            //string url = $"https://localhost:44382/Account/ConfirmEmail?token={token}&userId={user.Id}";
             var url = Url.Action("ConfirmEmail", "Account", new { token, userId = user.Id }, Request.Scheme);
 
             string emailBody = $@"
@@ -187,7 +186,9 @@ namespace FastKart.Controllers
             }
             await _signInManager.SignInAsync(user, false);
             return RedirectToAction("Index", "Home");
+
         }
+
 
 	}
 }

@@ -456,3 +456,9 @@ C:\Users\student\Desktop\FastKart\FastKart\bin\Debug\net8.0\MailKit.dll
 C:\Users\student\Desktop\FastKart\FastKart\bin\Debug\net8.0\MimeKit.dll
 C:\Users\student\Desktop\FastKart\FastKart\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\student\Desktop\FastKart\FastKart\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\bin\Debug\net8.0\MailKit.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\bin\Debug\net8.0\MimeKit.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\student\Desktop\MVC-Fastkart\FastKart\FastKart\obj\Debug\net8.0\FastKart.sourcelink.json

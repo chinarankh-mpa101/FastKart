@@ -310,8 +310,18 @@
                                                 <i data-feather="user"></i>
                                             </div>
                                             <div class="delivery-detail">
-                                                <h6>Hello,</h6>
-                                                <h5>My Account</h5>
+                                                @if (User.Identity.IsAuthenticated)
+                                                {
+                                                    <h6>Hello,</h6>
+                                                    <h5>@User.Identity.Name</h5>
+
+                                                }
+                                                else
+                                                {
+                                                    <h6>Hello,</h6>
+                                                    <h5>MyAccount</h5>
+
+                                                }
                                             </div>
                                         </div>
 
@@ -330,14 +340,16 @@
                                                     <a href="forgot.html">Forgot Password</a>
                                                 </li>
                                             </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+
+                                            
                             </div>
+                            </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="container-fluid-lg">
